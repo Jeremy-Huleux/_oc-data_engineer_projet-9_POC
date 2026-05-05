@@ -1,4 +1,4 @@
-# POC : Pipeline Temps Réel de Gestion des Tickets Clients (InduTech)
+# POC : Pipeline temps réel de gestion des tickets clients (InduTech)
 
 ## Contexte du projet
 
@@ -12,7 +12,7 @@ L’objectif est de simuler un pipeline moderne de type **Data Engineering / Str
 
 ---
 
-## Architecture du Pipeline
+## Architecture du pipeline
 
 Voici l'architecture hybride implémentée et simulée pour ce POC :
 
@@ -46,7 +46,7 @@ graph TD
 
 ---
 
-## Lancement du projet
+## Comment lancer le projet ?
 
 ### Prérequis
 
@@ -55,11 +55,25 @@ graph TD
 
 ### Étapes
 
+- Clonez ce dépôt.
+
 ```bash
 git clone <url-du-repo>
+```
+
+- Mettez votre terminal à la racine du projet.
+
+```bash
 cd <nom-du-projet>
+```
+
+- Lancez l'orchestration complète avec la commande suivante :
+
+```bash
 docker-compose up --build
 ```
+
+- Observez le POC fonctionner.
 
 ---
 

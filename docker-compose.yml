@@ -31,7 +31,7 @@ services:
     depends_on:
       - redpanda
     volumes:
-      # On lie les dossiers locaux aux dossiers du conteneur pour récupérer les Parquets !
+      # On lie les dossiers locaux aux dossiers du conteneur pour récupérer les Parquets
       - ./output_data:/app/output_data
       - ./checkpoints:/app/checkpoints
     networks:

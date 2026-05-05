@@ -7,6 +7,7 @@ from pyspark.sql import SparkSession
 # Cela dit à PySpark d'utiliser l'exécutable Python actuel au lieu de chercher "python3"
 # os.environ['PYSPARK_PYTHON'] = sys.executable
 # os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
+# SOUCIS REGLÉ AVEC LES VARIABLES D'ENVIRONNEMENTS
 # Créer une session Spark
 spark = SparkSession.builder.appName("TestPySpark").getOrCreate()
 

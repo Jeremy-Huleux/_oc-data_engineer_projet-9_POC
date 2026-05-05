@@ -1,6 +1,6 @@
-# 🎫 POC : Pipeline Temps Réel de Gestion des Tickets Clients (InduTech)
+# POC : Pipeline Temps Réel de Gestion des Tickets Clients (InduTech)
 
-## 📖 Contexte du projet
+## Contexte du projet
 
 Dans le cadre de la migration de l'entreprise **InduTech** vers le Cloud AWS, ce **POC (Proof of Concept)** démontre la faisabilité d'une architecture **event-driven** pour :
 
@@ -12,7 +12,9 @@ L’objectif est de simuler un pipeline moderne de type **Data Engineering / Str
 
 ---
 
-## 🏗️ Architecture du Pipeline
+## Architecture du Pipeline
+
+Voici l'architecture hybride implémentée et simulée pour ce POC :
 
 ```mermaid
 graph TD
@@ -34,7 +36,7 @@ graph TD
 
 ---
 
-## ⚙️ Stack technique
+## Stack technique
 
 - Python (Producer)
 - Redpanda (Kafka-like broker)
@@ -44,14 +46,14 @@ graph TD
 
 ---
 
-## 🚀 Lancement du projet
+## Lancement du projet
 
-### 📌 Prérequis
+### Prérequis
 
 - Docker
 - Docker Compose
 
-### ▶️ Étapes
+### Étapes
 
 ```bash
 git clone <url-du-repo>
@@ -61,7 +63,7 @@ docker-compose up --build
 
 ---
 
-## 🔍 Fonctionnement
+## Fonctionnement
 
 1. Le Producer Python génère des tickets clients simulés (JSON)
 2. Les données sont envoyées en continu vers Redpanda
@@ -72,7 +74,7 @@ docker-compose up --build
 
 ---
 
-## 📁 Résultats
+## Résultats
 
 Les données transformées sont disponibles dans :
 
@@ -84,13 +86,13 @@ Format : `.parquet`
 
 ---
 
-## 🎥 Démonstration vidéo
+## Démonstration vidéo
 
 👉 Remplacer ce lien par la vidéo
 
 ---
 
-## 💡 Objectifs du POC
+## Objectifs du POC
 
 - Valider une architecture temps réel
 - Simuler un pipeline Data Engineer moderne
@@ -99,7 +101,7 @@ Format : `.parquet`
 
 ---
 
-## 🧠 Améliorations possibles
+## Améliorations possibles
 
 - Intégration AWS réelle (S3, Kinesis, MSK)
 - Monitoring (Prometheus / Grafana)

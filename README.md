@@ -26,12 +26,20 @@ graph TD
         RP[(Redpanda - Broker Temps Réel)]
         SP[PySpark Structured Streaming]
         S3[(Stockage Local / Data Lake - Fichiers Parquet)]
-
-        Prod -->|Envoi JSON continu| RP
+        
+        Prod -->|Envoi JSON continus| RP
         RP -->|Lecture Stream| SP
         SP -->|Transformation & Assignation| SP
         SP -->|Sauvegarde Append| S3
     end
+
+    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:black;
+    classDef data fill:#232F3E,stroke:#FF9900,stroke-width:2px,color:white;
+    classDef onprem fill:#E6F3FF,stroke:#0066CC,stroke-width:2px,color:black;
+    
+    class Local,Prod onprem;
+    class S3,RP data;
+    class SP aws;
 ```
 
 ---

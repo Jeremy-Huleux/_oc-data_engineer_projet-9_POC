@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+# Installation de Java (requis pour Spark)
+RUN apt-get update && apt-get install -y default-jre && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+# Installation de PySpark (on fixe la version pour la stabilité)
+RUN pip install pyspark==3.5.1
+COPY pyspark_processor.py .
+CMD ["python", "pyspark_processor.py"]

@@ -1,0 +1,9 @@
+# Utilisation d'une image Python légère
+FROM python:3.11-slim
+WORKDIR /app
+# Installation de la dépendance
+RUN pip install kafka-python
+# Copie du script
+COPY producer.py .
+# Commande de lancement
+CMD ["python", "producer.py"]

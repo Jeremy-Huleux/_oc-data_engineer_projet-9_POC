@@ -110,7 +110,7 @@ Format : `.parquet`
 
 ## Démonstration vidéo
 
-👉 Remplacer ce lien par la vidéo
+[Cliquez ici pour voir la démonstration en vidéo](https://youtu.be/JR3ECIJO72Q)
 
 ---
 
